@@ -542,3 +542,23 @@ h3.notion-heading {
 .notion-collection-list__item .notion-property.notion-property__title .notion-semantic-string > span {
   white-space: pre-wrap !important;
 }
+
+/* 고정 텍스트에 Minimalist 테마 스타일 적용 */
+.fixed-text {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Minimalist 기본 폰트 */
+  font-size: 18px; /* 텍스트 크기 */
+  color: #333; /* 텍스트 색상 */
+  background-color: #f9f9f9; /* 배경 색상 */
+  padding: 20px; /* 내부 여백 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  line-height: 1.6; /* 줄 간격 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+/* 반응형 설정 (필요 시 추가) */
+@media screen and (max-width: 768px) {
+  .fixed-text {
+    font-size: 16px; /* 작은 화면에서 텍스트 크기 조정 */
+    padding: 15px; /* 패딩 조정 */
+  }
+}
