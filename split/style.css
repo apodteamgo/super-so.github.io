@@ -10,18 +10,18 @@
 @import "typography.css";
 
 
-/* 갤러리 컨테이너 설정 */
+/* 갤러리 카드 컨테이너 */
 .notion-collection-gallery {
-  grid-template-columns: repeat(3, 1fr) !important; /* 3열 레이아웃 */
-  gap: 30px !important; /* 갤러리 아이템 간격 */
-  margin: 80px 0 !important; /* 위아래 여백 */
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 30px !important;
+  margin: 80px 0 !important;
   padding: 0 !important;
   border: none !important;
 }
 
-/* 갤러리 카드 스타일 */
+/* 갤러리 카드 */
 .notion-collection-gallery .notion-collection-card {
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important; /* 부드러운 이동 효과 */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
   overflow: hidden !important;
   box-shadow: none !important;
 }
@@ -39,14 +39,14 @@
   top: 0 !important;
 }
 
-/* 카드 이미지 스타일 */
+/* 카드 커버 이미지 */
 .notion-collection-gallery .notion-collection-card__cover img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important; /* 이미지 비율 유지 */
+  object-fit: cover !important;
 }
 
-/* 카드 제목 스타일 */
+/* 카드 제목 */
 .notion-collection-gallery .notion-collection-card .notion-property__title {
   position: absolute !important;
   bottom: 0 !important;
@@ -58,9 +58,10 @@
   max-width: 400px !important;
 }
 
-/* 반응형 레이아웃 설정 */
+/* 반응형 설정 */
 @media (max-width: 856px) {
   .notion-collection-gallery {
-    grid-template-columns: 1fr !important; /* 작은 화면에서는 1열 레이아웃 */
+    grid-template-columns: 1fr !important; /* 1열로 변경 */
   }
 }
+
